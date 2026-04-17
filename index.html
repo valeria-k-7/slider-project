@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slider Project</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&family=Yeseva+One&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="slider">
+    <div class="slider__container">
+      <div class="slider__scene">
+        <div class="slider__left">
+          <div class="slider__content">
+            <h2 class="slider__title">Completed projects</h2>
+
+            <p class="slider__description">
+              Only a small part of the work performed by our company is presented
+              on the site. For 14 years on in the construction market we have made
+              happy more than 1000 families
+            </p>
+
+            <div class="slider__details">
+              <div class="slider__detail">
+                <h3>City:</h3>
+                <p class="slider__city">
+                  <span id="city-line-1">Rostov-on-Don</span>
+                  <span id="city-line-2">LCD admiral</span>
+                </p>
+              </div>
+
+              <div class="slider__detail">
+                <h3>Apartment area:</h3>
+                <p id="area">81 m2</p>
+              </div>
+
+              <div class="slider__detail">
+                <h3>Repair time:</h3>
+                <p id="time">3.5 months</p>
+              </div>
+
+              <div class="slider__detail">
+                <h3>Repair cost:</h3>
+                <p id="cost">Upon request</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider__footer">
+            <div class="slider__footer-line" aria-hidden="true"></div>
+
+            <div class="slider__controls">
+              <button
+                class="slider__arrow"
+                id="prev"
+                type="button"
+                aria-label="Previous slide"
+              >
+                <span>&larr;</span>
+              </button>
+
+              <div class="slider__dots">
+                <button
+                  class="slider__dot active"
+                  type="button"
+                  data-slide="0"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  class="slider__dot"
+                  type="button"
+                  data-slide="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  class="slider__dot"
+                  type="button"
+                  data-slide="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+
+              <button
+                class="slider__arrow"
+                id="next"
+                type="button"
+                aria-label="Next slide"
+              >
+                <span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__right">
+          <div class="slider__tabs">
+            <button class="slider__tab active" type="button" data-slide="0">
+              Rostov-on-Don, Admiral
+            </button>
+            <button class="slider__tab" type="button" data-slide="1">
+              Sochi Thieves
+            </button>
+            <button class="slider__tab" type="button" data-slide="2">
+              Rostov-on-Don Patriotic
+            </button>
+          </div>
+
+          <div class="slider__image-wrapper">
+            <img
+              id="slider-image"
+              class="slider__image"
+              src="images/slide1.png"
+              alt="Rostov-on-Don Admiral interior"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
